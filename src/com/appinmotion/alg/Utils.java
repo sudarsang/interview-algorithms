@@ -1,5 +1,7 @@
 package com.appinmotion.alg;
 
+import java.util.Random;
+
 public class Utils {
 
 	public static void print1d(int[] n) {
@@ -20,5 +22,14 @@ public class Utils {
 			System.out.println("");
 		}
 		System.out.println("");
+	}
+	
+	public static int[] gen1d(int size) {
+		int[] n = new int[size];
+		Random r = new Random();
+		for (int i = 0; i < size; i++) {
+			n[i] = r.nextInt(100);
+		}
+		return n;
 	}
 }

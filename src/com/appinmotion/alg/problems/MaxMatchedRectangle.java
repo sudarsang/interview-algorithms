@@ -2,6 +2,8 @@ package com.appinmotion.alg.problems;
 
 import java.util.Random;
 
+import com.appinmotion.alg.Utils;
+
 /*
  a) There is a square of nxn size which is comprised of n-square 1x1 squares. Some of these 1x1 squares are colored. 
  Find the biggest subsquare which is not colored.
@@ -22,6 +24,7 @@ public class MaxMatchedRectangle {
 				}
 			}
 		}
+		Utils.print2d(m);
 	}
 
 	public static void solveSquare(int[][] m) {
